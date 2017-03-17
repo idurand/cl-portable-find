@@ -15,4 +15,15 @@ and set
 
 (setq asdf::*compile-file-failure-behaviour* :ignore)
 
+;;; to compile and load the code being in the top directory:
+;;; compilation will take a long time!!
+;; with quicklisp
+(ql:quickload "find")
+
+;; with asdf:
+
+;;; To run the tests:
+(find::the-tests)
+
+
 
